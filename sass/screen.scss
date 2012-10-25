@@ -26,9 +26,23 @@
 @import "compass/reset";
 
 $brandcolor: #00b3b0;
+$headerbgcolor: #00a652;
+$sectionbgcolor: #01bef5;
+$footerbgcolor: #00a652;
 $margin: 16px;
 
 .brand {
   color: $brandcolor;
 }
 
+header {
+  background-color: darken($headerbgcolor, 20%);
+}
+
+section {
+  background-color: darken($sectionbgcolor, 20%);
+}
+
+footer {
+  background-color: darken($footerbgcolor, 20%);
+}
