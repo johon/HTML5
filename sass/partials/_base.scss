@@ -1,4 +1,3 @@
-
 html {
     background:#fff;
     -webkit-font-smoothing: antialiased;
@@ -13,12 +12,13 @@ html {
 .wrapper, .row {
     overflow: hidden;
     margin:0 auto;
-    max-width: $cols10;
+    max-width: $cols15;
 }
 .row > div {
-    float:right;
-    width: $cols5;
-}
-.row > div:first-child {
     float:left;
+    width: $cols5;
+	
+	img {
+	  display: block;
+	}
 }

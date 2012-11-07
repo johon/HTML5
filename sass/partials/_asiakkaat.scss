@@ -1,14 +1,37 @@
+.asiakkaat-body {
+  font-family: Amatic SC;
+}
 
 .brand {
   color: $brandcolor;
 }
 
 .matkaopas {
+	display: none;
 	background-color: #000000;
 	margin-bottom: 10px;
 	height: 350px;
+	width: 100%;
 }
 
 .matkaopas img{
 	float: right;
+}
+
+h1:hover {
+    color: $brandcolor;
+}
+
+.horiz-nav {
+    @extend .nav;
+	font-weight: bold;
+	li {
+		padding: 0 10px;
+	}
+}
+
+.asiakas-link {
+	color: #f57e22;
+	text-decoration: underline;
+	font-family: "Open Sans Condensed", "Arial Narrow", sans-serif;
 }
