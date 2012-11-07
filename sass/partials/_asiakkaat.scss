@@ -1,5 +1,25 @@
 .asiakkaat-body {
   font-family: Amatic SC;
+
+  .wrapper .row {
+	margin: 1em auto;
+  }
+  
+  @media mobile and (max-width: $cols14), screen and (max-width: $cols14) {
+	  .wrapper, .row {
+		overflow: hidden;
+		max-width: $cols5;
+	  
+	  }
+	  .row > div {
+		float:left;
+		width: $cols5;
+			
+		img {
+		  display: block;
+		}
+	  }
+  }
 }
 
 .brand {
@@ -25,13 +45,36 @@ h1:hover {
 .horiz-nav {
     @extend .nav;
 	font-weight: bold;
-	li {
+	margin:0 auto;
+	div {
 		padding: 0 10px;
+		display: inline-block;
+	}
+	
+	div.nav-item-hidden {
+		display: none;
+	}
+		
+	@media mobile and (max-width: $cols14), screen and (max-width: $cols14) {
+		div.nav-item-hidden {
+			display: inline-block;
+		}
+		div.nav-item-hidden-narrow {
+			display: none;
+		}
 	}
 }
 
 .asiakas-link {
-	color: #f57e22;
+	color: $asiakas-link-color;
 	text-decoration: underline;
+	font-family: "Open Sans Condensed", "Arial Narrow", sans-serif;
+}
+
+.more-link {
+	background-color: $more-link-bgcolor;
+	color: white;
+	display: inline;
+	font-weight: bold;
 	font-family: "Open Sans Condensed", "Arial Narrow", sans-serif;
 }

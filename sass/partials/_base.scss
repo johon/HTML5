@@ -16,7 +16,8 @@ html {
 }
 .row > div {
     float:left;
-    width: $cols5;
+    width: $cols4;
+	padding: 0 $cols1/2;
 	
 	img {
 	  display: block;
